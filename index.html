@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CyberAware — Cybersecurity Awareness Portal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="bar">
+<a class="logo" href="#/">🛡️ Cyber<span>Aware</span></a>
+<nav id="nav"></nav>
+</div></header>
+<main id="app"></main>
+<footer>© CyberAware — stay safe online. <span class="pill" id="mode">checking server…</span></footer>
+<button id="cbtn" aria-label="Open CyberBot chat" onclick="tog()">💬</button>
+<section id="chat" hidden aria-label="CyberBot chat"><div class="ch"><span>🤖 CyberBot</span><button aria-label="Close chat" onclick="tog()">✕</button></div><div id="msgs"></div><div id="chips"></div><div class="cin"><input id="ci" maxlength="300" placeholder="Ask about CyberAware…" onkeydown="if(event.key==='Enter')send()"><button class="btn" onclick="send()">Send</button></div></section>
+<script src="script.js"></script>
+</body>
+</html>
